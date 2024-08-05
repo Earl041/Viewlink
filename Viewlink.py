@@ -57,7 +57,7 @@ def open_url(url):
 
 def main():
     count = 5000000  # Bilangan kali untuk membuka URL
-    url = "https://nakklik.co/Earlganteng/"
+    url = "https://nakklik.co/hhhhhh/"
     urls = [url] * count  # Buat senarai URL untuk diulang
 
     # Kurangkan bilangan pekerja serentak kepada 10
