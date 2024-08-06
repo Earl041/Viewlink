@@ -61,7 +61,7 @@ def main():
     urls = [url] * count  # Buat senarai URL untuk diulang
 
     # Kurangkan bilangan pekerja serentak kepada 10
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=100) as executor:
         # Menghantar tugas untuk setiap URL
         futures = [executor.submit(open_url, url) for url in urls]
         # Tunggu semua tugas selesai
