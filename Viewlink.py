@@ -56,12 +56,12 @@ def open_url(url):
     sleep(5)
 
 def main():
-    count = 5000000  # Bilangan kali untuk membuka URL
+    count = 50000000  # Bilangan kali untuk membuka URL
     url = "https://nakklik.co/hhhhhh/"
     urls = [url] * count  # Buat senarai URL untuk diulang
 
     # Kurangkan bilangan pekerja serentak kepada 10
-    with ThreadPoolExecutor(max_workers=100) as executor:
+    with ThreadPoolExecutor(max_workers=5) as executor:
         # Menghantar tugas untuk setiap URL
         futures = [executor.submit(open_url, url) for url in urls]
         # Tunggu semua tugas selesai
