@@ -56,7 +56,7 @@ def open_url(url):
     sleep(5)
 
 def main():
-    count = 50000000  # Bilangan kali untuk membuka URL
+    count = 500000  # Bilangan kali untuk membuka URL
     url = "https://nakklik.co/hhhhhh/"
     urls = [url] * count  # Buat senarai URL untuk diulang
 
